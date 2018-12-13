@@ -1,25 +1,28 @@
-# Welcome!
-
-This C# template lets you get started quickly with a simple one-page playground.
+# C# && Operator Reference Tutorial
+www.amiedd.com
+Amiedd - Code, Cosplay and Games
 
 ```C# runnable
-// { autofold
 using System;
 
-class Hello 
+bool SecondOperand()
 {
-    static void Main() 
-    {
-// }
-
-Console.WriteLine("Hello World!");
-
-// { autofold
-    }
+    Console.WriteLine("Second operand is evaluated.");
+    return true;
 }
-// }
+
+bool a = false && SecondOperand();
+Console.WriteLine(a);
+// Output:
+// False
+
+bool b = true && SecondOperand();
+Console.WriteLine(b);
+// Output:
+// Second operand is evaluated.
+// True
 ```
 
-# Advanced usage
+# About C# && Operators
 
-If you want a more complex example (external libraries, viewers...), use the [Advanced C# template](https://tech.io/select-repo/386)
+The logical AND operator & also caluclates the logical AND of its bool(true, false or 0, 1) operators, but always evaluates BOTH operators.
