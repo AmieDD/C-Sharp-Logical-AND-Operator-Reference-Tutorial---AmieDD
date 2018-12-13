@@ -3,7 +3,6 @@ www.amiedd.com
 Amiedd - Code, Cosplay and Games
 
 ```C# runnable
-using System;
 
 bool SecondOperand()
 {
